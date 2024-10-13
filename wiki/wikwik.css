@@ -1,0 +1,133 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: pink; /* Soft pink background */
+    color: #333;
+}
+
+/* Header with background image */
+header {
+    background: url('birthday-background.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+header .overlay {
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.8rem;
+    animation: fadeIn 3s ease-in-out;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Keyframes for header animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Section styles */
+.about, .details, .activities, .gallery {
+    padding: 3rem;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about:hover, .details:hover, .activities:hover, .gallery:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff4081;
+    text-align: center;
+}
+
+/* Activity list styles */
+
+
+/* Gallery styles */
+.gallery-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 1%;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #ff4081;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        margin: 1% 0;
+    }
+}
+
+.a-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
